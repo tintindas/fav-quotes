@@ -1,10 +1,10 @@
-#Favourite Quotes App
+# Favourite Quotes App
 
 A React app to showcase some of my favourite quotes.
 
 Uses the quotes-api. (https://tintin-quotes-api.herokuapp.com)
 
-##Screenshots
+## Screenshots
 
 On start
 
