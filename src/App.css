@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@500&family=Gentium+Basic&family=Nanum+Gothic&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Eczar&family=Gentium+Basic&family=Nanum+Gothic&display=swap');
 
 body {
   margin: 0;
@@ -16,14 +16,14 @@ body {
 .head-content {
   max-width: 60%;
   margin: auto;
-  padding-top: 5vh;
+  padding-top: 10vh;
   margin-bottom: 10vh;
 }
 
 .head-title {
   font-size: 4rem;
   text-align: center;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Dancing Script', sans-serif;
 }
 
 .head-body {
@@ -89,6 +89,32 @@ a {
   text-decoration: none;
   font-weight: bold;
   font-style: oblique;
+}
+
+/*------------------------------------ ANIMATION------------------------------------ */
+
+/* enter */
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms linear 300ms;
+}
+
+/* exit */
+
+.fade-exit {
+  opacity: 0;
+}
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms linear;
+}
+.fade-exit-done {
+  opacity: 0;
 }
 
 
