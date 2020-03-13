@@ -2,6 +2,8 @@
 
 A React app to showcase some of my favourite quotes.
 
+## API Used
+
 Uses the quotes-api. (https://tintin-quotes-api.herokuapp.com)
 
 ## Screenshots
@@ -13,3 +15,7 @@ On start
 Click through quotes
 
 ![image](https://user-images.githubusercontent.com/47525983/76648365-90580f00-6584-11ea-8824-e1415b878860.png)
+
+## Try it out
+
+https://tintindas.github.io/fav-quotes/
