@@ -20,13 +20,13 @@ function App() {
 
 
   return (
-    <div className="App" onClick={() => {
-        newQuote();
-        setTimeout(function() {
-          setIntro({});
-        }, 300);
-      }}>
-      <div className="wrapper">
+    <div className="App" >
+      <div className="wrapper" onClick={() => {
+          newQuote();
+          setTimeout(function() {
+            setIntro({});
+          }, 300);
+        }}>
         <Header intro={intro}/>
         <Quote quote = {quote} />
       </div>
