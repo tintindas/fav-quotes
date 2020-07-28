@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Eczar&family=Gentium+Basic&family=Nanum+Gothic&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Eczar&family=Gentium+Basic&family=Nanum+Gothic&display=swap");
 
 body {
   margin: 0;
   padding: 0;
   border: none;
-  background-color: #fbf4f9;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 
-.App{
+.App {
   height: 100vh;
 }
 
@@ -23,19 +23,19 @@ body {
 .head-title {
   font-size: 4rem;
   text-align: center;
-  font-family: 'Dancing Script', sans-serif;
+  font-family: "Dancing Script", sans-serif;
 }
 
 .head-body {
   margin-top: 5vh;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   font-size: 1rem;
 }
 
 /*------------------------------------ QUOTE------------------------------------ */
 
-
 .card {
+  background-color: rgb(252, 244, 245);
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 75%;
@@ -48,35 +48,37 @@ body {
   margin-bottom: 7vh;
 }
 
-
-.quote-content{
+.quote-content {
   font-size: 2rem;
   grid-column: 1/3;
   margin-bottom: 5vh;
-  font-family: 'Gentium Basic', serif;
+  font-family: "Gentium Basic", serif;
 }
 
 .author {
-  font-family: 'Eczar', serif;
-  color: #1eb2a6;
+  font-size: 1.3rem;
+  font-family: "Eczar", serif;
+  color: #0ba1ce;
 }
 
 .source {
+  font-size: 1.3rem;
+
   grid-column: 2/3;
   justify-self: end;
-  font-family: 'Eczar', serif;
-  color: #1eb2a6;
+  font-family: "Eczar", serif;
+  color: #0ba1ce;
 }
 
 /*------------------------------------ FOOTER------------------------------------ */
 
-
-footer, a {
+footer,
+a {
   text-align: center;
   color: #8ac6d1;
 }
 
-.wrapper{
+.wrapper {
   min-height: 100%;
   margin-bottom: 10px;
 }
@@ -99,39 +101,39 @@ a {
   opacity: 0;
 }
 
-.fade-enter.fade-enter-active {
+.fade-enter-active {
   opacity: 1;
-  transition: opacity 1000ms linear 300ms;
+  transition: opacity 500ms linear;
+}
+
+.fade-enter-done {
+  opacity: 1;
 }
 
 /* exit */
 
 .fade-exit {
-  opacity: 0;
+  opacity: 1;
 }
-.fade-exit.fade-exit-active {
+.fade-exit-active {
   opacity: 0;
-  transition: opacity 300ms linear;
+  transition: opacity 500ms linear;
 }
 .fade-exit-done {
   opacity: 0;
 }
 
-
 /*---------------------------------------------------- MOBILE---------------------------------------------------- */
 
-
 @media (max-width: 980px) {
-
   /*------------------------------------ HEADER------------------------------------ */
 
   .head-content {
     padding-top: 10vh;
-    max-width: 70%
+    max-width: 70%;
   }
 
   .head-title {
-
     font-size: 5rem;
   }
 
@@ -141,7 +143,6 @@ a {
 
   /*------------------------------------ QUOTE------------------------------------ */
 
-
   .card {
     margin-top: 13vh;
   }
@@ -150,16 +151,15 @@ a {
     font-size: 3rem;
   }
 
-  .author{
+  .author {
     font-size: 1.5rem;
   }
 
-  .source{
+  .source {
     font-size: 1.5rem;
   }
 
   /*------------------------------------ FOOTER------------------------------------ */
-
 
   footer {
     font-size: 1.5rem;
